@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio(bootstrap)</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
    
 </head>
 <body>
     <style>
         .banner-image {
-          background-image: url('./assets/img/image\ 23.png');
-          background-size: cover;
+         background: rgb(0, 0, 0);
+       
+          
           
         }
 
@@ -23,6 +28,128 @@
           padding: 10px;
         }
 
+
+        .row {
+          margin: 15px;
+          }
+
+
+
+          .contenedor-icono i{
+            font-size: 60px;
+            color: #266565;
+          }
+
+
+          /*barras de progreso*/
+
+          
+        .badge{
+
+        font-size: 25px;
+        font-weight: 200;
+        }
+
+      .badge i {
+
+      font-size: 20px;
+      font-weight: 200;
+      }
+
+      .about-rating{
+
+       font-size: 15px;
+       font-weight: 500;
+        margin-top: 10px;
+      }
+
+    .total-ratings{
+
+    font-size: 12px;
+
+    }
+
+    .bg-custom{
+
+  background-color: #266565 !important;
+  }
+
+    .progress{
+
+    margin-top:10px;
+    
+    
+    }
+
+    .progress-bar{
+      background-color: #266565 !important;
+    }
+
+    .img-card{
+      width: 80%;
+      margin: auto;
+      transition: all 0.3s;
+
+    }
+
+    .img-card:hover{
+      transform: scale(1.15);
+    
+    }
+
+  
+
+    .btn-hover:hover{
+      background-color: #266565 !important;
+      color: white;
+    }
+
+    .about-hero{
+      background-color: #266565;
+     
+    }
+
+    .btn-cv{
+      background-color: #21A960;
+
+    }
+
+    .iconos{
+      font-size: 1.8rem;
+    }
+
+    .btn-header{
+      background-color: #21A960;
+      color: white;
+
+
+    }
+
+    .btn-header:hover{
+      color: white;
+    }
+
+
+    .logo-btn{
+      width: 70%;
+
+    }
+
+
+
+    
+@media(max-width:974px){
+      .logo-btn{
+        display: none;
+      }
+
+
+}
+
+
+   
+    
+
         
 
 
@@ -32,7 +159,7 @@
     
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" >
         <div class="container">
-          <a class="navbar-brand" href="#inicio">Grecia Amaya</a>
+          <a class="navbar-brand" href="#inicio"><img src="./assets/img/Logo 1 Grecia.png" alt="" class="img-fluid logo-btn" ></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -45,14 +172,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
   
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse  fs-5" id="navbarNav">
             <div class="mx-auto"></div>
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Inicio</a>
+              <li class="nav-item ">
+                <a class="nav-link text-white " href="#inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#sobre mi">Sobre mi</a>
+                <a class="nav-link text-white" href="#about">Sobre mi</a>
               </li>
 
               <li class="nav-item">
@@ -72,104 +199,210 @@
 
 
 
-      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center  " id="inicio">
+     <section>
+
+      <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center " id="inicio" >
+
+
+
+        <div class="row justify-content-between align-items-center">
+          <div class="col-md">
+            <a href="#"> <img src="./assets/img/Computadora.png" alt="" class="img-fluid " ></a>
+           
+          </div>
+          <div class="col-md p-5 "  data-aos="zoom-in"  data-aos-duration="1500">
+            <h1 class="text-light mb-5"  >Bring every idea to life and be transported into another world.</h1>
+          
+    
+           <a href="#proyectos"> <button type="button" class="btn btn-header  fs-5 text-center">Ver ideas</button></a>
+
+          </div>
+
+         </div>
     
    
-    <div class="content text-center">
-      
-        
-        
-      <h1 class="text-white">Descubre la creatividad del diseño en ideas para tus fotografías.</h1>
-      
 
-      <button type="button" class="btn btn-success">Ver ideas</button>
-
-      
-    </div>
-     
-     
-      
-
-     
-    </div>
-
-
-
-
-
-
-    <section id="sobre mi">
-
-      <div class="container mt-5 mb-5">
-        <div class="d-flex justify-content-center row">
-            <div class="col-md-9">
-                <div id="carousel-1" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="">
-                                <div class="row no-gutters">
-                                    <div class="col-md-5"><img class="img-fluid profile" src="/assets/img/foto grecia.png" height="300"></div>
-                                    <div class="col-md-7">
-                                        <div class="bg-white p-2 px-3 ">
-                                            <p class="text-justify">Soy diseñadora web, me apasiona el mundo digital. Tengo experiencia en la fotografía gastronomica, te ayudo en la visión y el exito de tu empresa.<br><br>
-                                              
-                                              Introduzco la creatividad visual en ideas únicas junto a las prácticas de desarrollo web siguiendo las tendencias del diseño.<br></p>
-                                           
-                                            <div class="d-flex align-items-center mt-3 text-success font-weight-bold"><button class="mr-2 btn btn-success">Descarcar Cv</button><i class="fa fa-long-arrow-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    
-                    </div>
-                </div>
-            </div>
+         
+          
+    
+         
         </div>
-    </div>
+     </section>
+
+          
+    
 
 
 
-    </section>
 
 
-    <section class=" row justify-content-around text-center  "id="servicios"> 
+
+
+     <section class=" p-5 bg-dark mb-5" id="about">
+          <div class="container py-5">
+             <div class="row justify-content-between align-items-center">
+              <div class="col-md">
+                <a href="#"> <img src="./assets/img/foto grecia.png" alt="" class="img-fluid"  ></a>
+              </div>
+              <div class="col-md p-5 text-light" data-aos="fade-left">
+                <h2 class="fs-2" >Diseñadora, Frontend Developer</h2>
+                <p class=" fs-5" >¡Hola! introduzco la creatividad visual en ideas únicas junto a las prácticas de desarrollo web siguiendo las tendencias del diseño.</p>
+                <a href="./assets/Grecia Fabiola Amaya Camacho - Web Developer.pdf" class="btn  mt-3 btn-cv text-white fs-6"  target="blanc">Descargar CV</a>
+
+              </div>
+
+             </div>
+
+          </div>
+
+
+          
+
+
+
+     </section>
+
+
+     
+
+
+
+
+    
+
+
+    <section class=" row justify-content-around text-center bg-white "id="servicios"  data-aos="fade-up"
+    data-aos-duration="1000"> 
       <h2 class="col-12 display-4 text4 mb-5">Servicios</h2>
       <div class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-lingt mb-5">
-        <img src="./assets/img/coding_code_icon_217337.png" alt="" class="bg-success bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
+        <div class="contenedor-icono">
+          <i class="bi bi-code-slash"></i>
+         </div>
 
-        <h3 class="text-capitalize"> Desarrollo web</h3>
+        <h3 class="text-capitalize">Frontend Developer</h3>
         <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo itaque similique, sequi odit, eligendi quasi autem quia veritatis pariatur id aspernatur ad omnis eius, repudiandae culpa? Id, distinctio possimus.
+          Me gusta codificar cosas desde cero y disfruto dando vida a nuevas ideas en el navegador.
         </p>
-
-        <a href="#" class="btn btn-outline-success""> Ver</a>
       </div>
 
       <div class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-lingt mb-5">
-        <img src="./assets/img/open-laptop-computer_icon-icons.com_73474.png" alt="" class="bg-success bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
+       <div class="contenedor-icono">
+        <i class="bi bi-laptop"></i>
+       </div>
 
-        <h3 class="text-capitalize"> Diseño UX UI</h3>
+        <h3 class="text-capitalize">Diseñadora</h3>
         <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo itaque similique, sequi odit, eligendi quasi autem quia veritatis pariatur id aspernatur ad omnis eius, repudiandae culpa? Id, distinctio possimus.
+          
+          Valoro el contenido simple, los patrones de diseño limpios y las interacciones completas.
         </p>
 
-        <a href="#" class="btn btn-outline-success"> Ver</a>
       </div>
 
       <div class="col-10 col-md-10 col-lg-3 bg-white rounded shadow p-3 fw-lingt mb-5">
-        <img src="./assets/img/camera_icon-icons.com_72364.png" alt="" class="bg-success bg-gradient d-inline-bloc rounded-circle mb-3 icon-service">
-
-        <h3 class="text-capitalize"> Fotografía</h3>
+        <div class="contenedor-icono">
+          <i class="bi bi-camera-fill "></i>
+         </div>
+        <h3 class="text-capitalize">fotografía Publicitaria</h3>
         <p class="text-muted">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quo itaque similique, sequi odit, eligendi quasi autem quia veritatis pariatur id aspernatur ad omnis eius, repudiandae culpa? Id, distinctio possimus.
+          Disfruto mucho capturar experiencias que reflejen el valor de un producto para las personas.
         </p>
 
-        <a href="#proyectos" class="btn btn-outline-success""> Ver</a>
       </div>
   
     </section>
+
+
+
+
+     <!--Barras de progreso-->
+
+ <section class=""  data-aos="zoom-in-right">
+
+  <h2 class="col-12 display-4 text4 mb-5 row justify-content-center text-center  ">Habilidades</h2>
+
+    <div class=" row justify-content-between align-items-center mx-auto">
+
+      <div class="container mb-5 col-md ">
+   
+
+        <div class="ratings text-center p-4 py-5">
+        <span class="d-block about-rating fs-2 ">Programación</span>
+        </div>
+    
+        
+        <div class="progress ">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="Success example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Html</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="Info example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Css</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar align-items-center fs-6" role="progressbar" aria-label="Warning example" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="Danger example" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+        </div>
+    
+        <div class="progress">
+          <div class="progress-bar align-items-center fs-6" role="progressbar" aria-label="Danger example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Figma</div>
+        </div>
+    
+        <div class="progress">
+          <div class="progress-bar align-items-center fs-6" role="progressbar" aria-label="Danger example" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">React</div>
+        </div>
+      </div>
+    
+    
+    
+      <div class="container mb-5  col-md">
+      
+    
+        <div class="ratings text-center p-4 py-5">
+          <span class="d-block about-rating fs-2">Diseño Grafico</span>
+            
+        </div>
+    
+        
+        
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Ilustrador</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar align-items-center fs-6" role="progressbar" aria-label="example" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Premier Pro</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">After Effects</div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar  align-items-center fs-6" role="progressbar" aria-label="example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Lightroom</div>
+        </div>
+    
+    
+       
+      </div>
+    
+
+    </div>
+
+ 
+</section>
+
+
+
+
+
+
+
+    
+
+
+
+
+
 
 
 
@@ -178,76 +411,75 @@
 
       <div class="row py-5">
         <div class="col">
-          <div class="border-bottom">
+          <div class="">
+            <h2 class="col-12 display-4 text4 mb-5 text-center ">Proyectos</h2>
           
-            <h2 class="text-center"> Fotografía gastronomica</h2>
+           
            </div>
         </div>
       </div>
 
-     <div class=" row  justify-content-around text-center m-5  ">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/Sangria post.png" alt="" class="card-img-top mb-4">
+     <div class=" row  justify-content-around text-center m-5 ">
+      <div class="col-8 col-md-6 col-lg-4  mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Portada sivarShaking.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Sangria</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title  mb-2">Diseño UX & UI</h3>
+            <a href="sivarShaking.html" class="btn btn-outline-secondary btn-hover" target="blanc">Ver</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/Postre de baileys!!.png" alt="" class="card-img-top mb-4">
+
+      <div class="col-8 col-md-6 col-lg-4 mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Portada fotografia.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Postre de baileys</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title  mb-3">Fotografia de producto</h3>
+            <a href="producto.html" class="btn btn-outline-secondary btn-hover" target="blanc">Ver</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/Smoothie 2 post.png" alt="" class="card-img-top mb-4">
+      <div class="col-8 col-md-6 col-lg-4 mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Post 2.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Smoothies</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title"></h3>
+            <a href="./gastronomica.html" class="btn btn-outline-secondary btn-hover" target="blanc">Ver</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/Tostadas corregida (1).png" alt="" class="card-img-top mb-4">
+    
+
+      <div class="col-8 col-md-6 col-lg-4 mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Post 2.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Tostadas a la francesa</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title"></h3>
+            <a href="#" class="btn btn-outline-secondary btn-hover">Ver</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/day burger post.png" alt="" class="card-img-top mb-4">
+      <div class="col-8 col-md-6 col-lg-4 mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Post 2.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Puled pork burger</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title"></h3>
+
+            <a href="#" class="btn btn-outline-secondary btn-hover">Ver</a>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="card">
-          <img src="assets/img/Comida de sabados post.png" alt="" class="card-img-top mb-4">
+      <div class="col-8 col-md-6 col-lg-4 mb-5">
+        <div class="card img-card">
+          <img src="assets/img/Post 2.png" alt="" class="card-img-top mb-4">
           <div class="card-body">
-            <h3 class="card-title">Chicken mustard</h3>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="#" class="btn btn-outline-success">Ver</a>
+            <h3 class="card-title"></h3>
+            <a href="#" class="btn btn-outline-secondary btn-hover">Ver</a>
           </div>
         </div>
       </div>
@@ -259,78 +491,43 @@
 
 
 
-    <footer class="container-fuid" id="contacto">
-      <div class="row p-5 bg-dark text-white justify-content-center ">
-        <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h3">Grecia Amaya</p>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h5">Redes sociales</p>
-              <a href="#" class="btn btn-link text-light "><i class="bi bi-behance"></i></a>
-              <a href="#" class="btn btn-link text-light"><i class="bi bi-linkedin"></i></a>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="h5">Proyectos</p>
-
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5">Contacto</p>
-
-        </div>
-      </div>
-
-    </footer>
 
 
+
+
+
+
+ <footer class="container-fuid" id="contacto">
+  <div class="card text-center bg-dark">
   
+    <div class="card-body">
+      <h5 class="card-title text-light">Redes sociales</h5>
+      <a href="https://www.behance.net/greciacamacho2" class="btn btn-dark iconos" target="blanc"><i class="bi bi-behance"></i></a>
+      <a href="https://www.linkedin.com/in/grecia-amaya-597b121b3/" class="btn btn-dark iconos" target="blanc"><i class="bi bi-linkedin"></i></a>
+      <p class="card-text text-light">Living, learning & leveling up one day at a time.</p>
+    </div>
+    <div class="card-footer text-muted">
+      Create by Grecia Camacho <i class="bi bi-c-circle"></i> 2022
+    </div>
+  </div>
   
 
+</footer>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-   
+<script src="assets/js/Menu.js"></script>
 
     
 <script src="assets/js/bootstrap.bundle.min.js"></script> 
 
-<script type="text/javascript">
-    var nav = document.querySelector('nav');
-
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 100) {
-        nav.classList.add('bg-dark', 'shadow');
-      } else {
-        nav.classList.remove('bg-dark', 'shadow');
-      }
-    });
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
-    
 
-
-  </script>
 </body>
 </html>
